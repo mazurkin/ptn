@@ -1,0 +1,11 @@
+FROM ./ptn-8B-q8.gguf
+
+TEMPLATE """
+<|question|>{{ .Prompt }}<|answer|>
+"""
+
+PARAMETER num_ctx 2048
+PARAMETER temperature 0.5
+PARAMETER top_p 0.9
+PARAMETER repeat_penalty 1.1
+PARAMETER stop "<|question|>"
