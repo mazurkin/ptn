@@ -352,7 +352,7 @@ class PtnTrainerDatasets(abc.ABC):
         texts: list[str] = self.create_texts()
 
         # Create dataset
-        dataset = Dataset.from_dict({"text": texts})
+        dataset = Dataset.from_dict({"text": texts}).shuffle(seed=42)
 
         # Split into train/eval
         split = dataset.train_test_split(test_size=test_size, seed=42)

@@ -2,7 +2,7 @@
 name = "ptn-environment"
 version = "0.1.0"
 description = "ptn project"
-authors = ["Nick Mazurkin <nmazurkin@pulsepoint.com>"]
+authors = ["Nick Mazurkin <mazurkin@gmail.com>"]
 readme = "README.md"
 
 [[tool.poetry.source]]
